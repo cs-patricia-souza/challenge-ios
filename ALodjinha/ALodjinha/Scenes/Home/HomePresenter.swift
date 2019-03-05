@@ -1,9 +1,9 @@
 //
-//  HomePresenter.swift
-//  B2W
+//  HomePresenter
+//  ALodjinha
 //
-//  Created Patricia Souza on 05/3/2019.
-//  Copyright © 2019 Youse. All rights reserved.
+//  Created by Patricia Cintia de Souza on 05/03/19.
+//  Copyright © 2019 Patricia Souza. All rights reserved.
 //
 import UIKit
 
@@ -41,6 +41,7 @@ extension HomePresenter: HomePresenterInputProtocol {
     func viewDidLoad() {
         
         print("presenter viewdidload")
+        self.interactor.fetchBanners()
 
     }
 }
@@ -48,6 +49,16 @@ extension HomePresenter: HomePresenterInputProtocol {
 // MARK: - HomeInteractorOutputProtocol
 
 extension HomePresenter: HomeInteractorOutputProtocol {
+    func fetchBannersDidSucced(banners: [BannerEntity]) {
+        print("Banners Carregados \(banners.toJSONString() ?? "")")
+        
+        
+    }
+    
+    func fetchBannersDidFail() {
+        
+    }
+    
 
     // MARK: - Internal Methods
 

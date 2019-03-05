@@ -22,6 +22,8 @@
 		4DA37D15222F135F0054AEE0 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DA37D14222F135F0054AEE0 /* About.storyboard */; };
 		4DA37D17222F16080054AEE0 /* TabBarControllerWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA37D16222F16080054AEE0 /* TabBarControllerWireframe.swift */; };
 		4DA37D1A222F18670054AEE0 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA37D19222F18670054AEE0 /* UIColor+Ext.swift */; };
+		4DA37D1D222F279C0054AEE0 /* APIRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA37D1C222F279B0054AEE0 /* APIRoutes.swift */; };
+		4DA37D20222F28530054AEE0 /* BannerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA37D1F222F28530054AEE0 /* BannerEntity.swift */; };
 		F1DA8C3F5650E4915C75C72C /* Pods_ALodjinha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB44A420E69045B0783A8FD7 /* Pods_ALodjinha.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +67,8 @@
 		4DA37D14222F135F0054AEE0 /* About.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
 		4DA37D16222F16080054AEE0 /* TabBarControllerWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllerWireframe.swift; sourceTree = "<group>"; };
 		4DA37D19222F18670054AEE0 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		4DA37D1C222F279B0054AEE0 /* APIRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRoutes.swift; sourceTree = "<group>"; };
+		4DA37D1F222F28530054AEE0 /* BannerEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerEntity.swift; sourceTree = "<group>"; };
 		D099F84586115D8DF1BAC5AD /* Pods-ALodjinha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALodjinha.debug.xcconfig"; path = "Target Support Files/Pods-ALodjinha/Pods-ALodjinha.debug.xcconfig"; sourceTree = "<group>"; };
 		FB44A420E69045B0783A8FD7 /* Pods_ALodjinha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ALodjinha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -149,6 +153,7 @@
 		4DA37CFA222F0F5A0054AEE0 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				4DA37D1E222F282C0054AEE0 /* Entities */,
 				4DA37CFF222F0F9D0054AEE0 /* HomeInteractor.swift */,
 				4DA37D00222F0F9E0054AEE0 /* HomePresenter.swift */,
 				4DA37CFC222F0F9D0054AEE0 /* HomeProtocols.swift */,
@@ -164,6 +169,7 @@
 			children = (
 				4DA37D07222F0FA80054AEE0 /* HomeRequests.swift */,
 				4DA37D10222F13150054AEE0 /* Home.storyboard */,
+				4DA37D1C222F279B0054AEE0 /* APIRoutes.swift */,
 			);
 			path = Extras;
 			sourceTree = "<group>";
@@ -226,6 +232,14 @@
 				4DA37D19222F18670054AEE0 /* UIColor+Ext.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4DA37D1E222F282C0054AEE0 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				4DA37D1F222F28530054AEE0 /* BannerEntity.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		731CB30184BD5C8C4029F72B /* Pods */ = {
@@ -436,9 +450,11 @@
 				4DA37D01222F0F9E0054AEE0 /* HomeProtocols.swift in Sources */,
 				4DA37D17222F16080054AEE0 /* TabBarControllerWireframe.swift in Sources */,
 				4DA37D04222F0F9E0054AEE0 /* HomeInteractor.swift in Sources */,
+				4DA37D1D222F279C0054AEE0 /* APIRoutes.swift in Sources */,
 				4DA37D1A222F18670054AEE0 /* UIColor+Ext.swift in Sources */,
 				4DA37D03222F0F9E0054AEE0 /* HomeView.swift in Sources */,
 				4DA37CCB222F0A970054AEE0 /* AppDelegate.swift in Sources */,
+				4DA37D20222F28530054AEE0 /* BannerEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

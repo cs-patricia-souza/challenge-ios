@@ -1,9 +1,9 @@
 //
-//  HomeWireframe.swift
-//  B2W
+//  HomeWireframe
+//  ALodjinha
 //
-//  Created Patricia Souza on 05/3/2019.
-//  Copyright © 2019 Youse. All rights reserved.
+//  Created by Patricia Cintia de Souza on 05/03/19.
+//  Copyright © 2019 Patricia Souza. All rights reserved.
 //
 import UIKit
 

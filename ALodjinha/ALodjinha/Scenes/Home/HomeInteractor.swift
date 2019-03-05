@@ -1,9 +1,9 @@
 //
-//  HomeInteractor.swift
-//  B2W
+//  HomeInteractor
+//  ALodjinha
 //
-//  Created Patricia Souza on 05/3/2019.
-//  Copyright © 2019 Youse. All rights reserved.
+//  Created by Patricia Cintia de Souza on 05/03/19.
+//  Copyright © 2019 Patricia Souza. All rights reserved.
 //
 import UIKit
 
@@ -37,5 +37,13 @@ class HomeInteractor: NSObject {
 extension HomeInteractor: HomeInteractorInputProtocol {
 
     // MARK: - Internal Methods
+    
+    func fetchBanners() {
+        self.homeRequests.fetchBanners(success: { [weak self] banners in
+            self?.output.fetchBannersDidSucced(banners: banners)
+        }) { [weak self] error, response in
+            self?.output.fetchBannersDidFail()
+        }
+    }
 
 }

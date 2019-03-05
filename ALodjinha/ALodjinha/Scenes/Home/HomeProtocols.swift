@@ -1,9 +1,9 @@
 //
-//  HomeProtocols.swift
-//  B2W
+//  HomeProtocols
+//  ALodjinha
 //
-//  Created Patricia Souza on 05/3/2019.
-//  Copyright © 2019 Youse. All rights reserved.
+//  Created by Patricia Cintia de Souza on 05/03/19.
+//  Copyright © 2019 Patricia Souza. All rights reserved.
 //
 import Foundation
 import UIKit
@@ -16,6 +16,7 @@ protocol HomeWireframeProtocol: class {
 // MARK: - Interactor
 
 protocol HomeInteractorInputProtocol {
+    func fetchBanners()
 
 }
 
@@ -26,6 +27,8 @@ protocol HomePresenterInputProtocol: class {
 }
 
 protocol HomeInteractorOutputProtocol: class {
+    func fetchBannersDidSucced(banners: [BannerEntity])
+    func fetchBannersDidFail()
 
 }
 
