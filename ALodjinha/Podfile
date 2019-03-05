@@ -1,0 +1,23 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+# Uncomment this line to define a global platform for your project
+platform :ios, '10.0'
+
+# Uncomment this line if you're using Swift
+use_frameworks!
+
+# ignore all warnings from all pods
+inhibit_all_warnings!
+
+workspace 'ALodjinha.xcworkspace'
+project 'ALodjinha.xcodeproj'
+
+def all_pods
+    pod 'ObjectMapper', '3.3.0'        
+    pod 'Alamofire', '4.7.3'
+    pod 'AlamofireImage', '3.4.1'
+end
+
+target 'ALodjinha' do
+	all_pods
+end
